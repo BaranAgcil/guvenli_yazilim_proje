@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Rubik+Scribble&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="menu">
+        <div id="logo">GÜVENLİ YAZILIM</div>
+        <nav>
+            <a href="{{ url_for('fileupload') }}">Fotoğraf Yükleme</a>
+            <a href="{{ url_for('login') }}">GirişYap/Kayıt Ol</a>
+            <a href="#Hakkimda">Hakkımda</a>
+            <a href="#iletisim">İletişim</a>
+            <a href="{{ url_for('asd') }}">Eğlence</a>
+        </nav>
+    </section>
+
+    <section id="Anasayfa">
+        <div id="black"></div>
+        <div id="icerik">
+            <h2>Açıklar</h2>
+            <hr>
+            <p>
+                Bu internet sitesi çeşitli açıklar barındırır bakalım bulabilecek misin
+            </p>
+        </div>
+    </section>
+    <section id="Hakkimda">
+        <h3>Hakkımda</h3>
+        <div id="container">
+            <div id="sol">
+                <h5 id="h5sol">
+                    Merhaba ben Baran
+                </h5>
+            </div>
+            <div id="sag">
+                <p id="psag">Projesi için güvenli bir yazılım geliştirmeye çalışan bir siber güvenlik öğrencisi</p>
+            </div>
+            <img src="/images/b.jpg" alt="" class="img-fluid mt100">
+            <p id="pson"></p>
+        </div>
+    </section>
+    <section id="iletisim">
+        <div class="container">
+            <h3 id="h3iletisim">İletişim</h3>
+            <div id="iletisimopak">
+                <div id="formgrup">
+                    <form action="/submit_form" method="POST">
+                        <div id="solform">
+                            <input type="text" name="isim" placeholder="Ad Soyad" required class="formkontrol">
+                            <input type="text" name="tel" placeholder="Telefon Numarası" required class="formkontrol">
+                        </div>
+                        <div id="sagform">
+                            <input type="email" name="mail" placeholder="Email Adresiniz" required class="formkontrol">
+                            <input type="text" name="konu" placeholder="Konu Başlığı" required class="formkontrol">
+                        </div>
+                        <textarea name="mesaj" placeholder="Mesajınızı Girin" cols="30" required class="formkontrol"
+                            rows="10"></textarea>
+                        <input type="submit" value="Gönder">
+                    </form>
+                </div>
+                <div id="adres">
+                    <h4>Adres: </h4>
+                    <p>Yenimahalle Ankara</p>
+                    <p>Tel: 0312 312 12 12</p>
+                    <p>email: proje@gmail.com</p>
+                    <a href="#menu" id="up">Anasayfa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>2024 Tüm Hakları Saklıdır</footer>
+       
+</body>
+</html>
