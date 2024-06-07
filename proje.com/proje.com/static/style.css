@@ -1,0 +1,204 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    color: #333;
+    
+    font-family: "Bungee Inline", sans-serif;
+}
+
+#menu {
+    background-color: #003f82;
+    
+    color: #fff;
+    
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: 300;
+    
+    font-family: "Bungee Inline", sans-serif;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #000000;
+    
+}
+
+#Anasayfa {
+
+    height: 900px;
+    background-image: url("images/a.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#black {
+    height: 900px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#icerik {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: "Bungee Inline", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+#Hakkimda {
+    background-color: #73b9ff;
+    padding: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 55px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+
+#container {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+
+#sol {
+    float: left;
+    border-right: 3px solid #ff6666;
+    font-size: 30px;
+    width: 400px;
+    color: #ff6666;
+}
+
+#sag {
+    float: right;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.mt100 {
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    transform: scaleX(1.5);
+    transform: scaleY(1.1);
+}
+
+#iletisim {
+    background: url(images/c.jpg);
+    background-size: cover;
+    padding: 50px;
+    height: 700px;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#h3iletisim {
+    color: white;
+}
+
+#formgrup {
+    width: 700px;
+    float: left;
+    height: 500px;
+    text-align: left;
+}
+
+#sagform {
+    width: 50%;
+    float: left;
+    padding-right: 5px;
+}
+
+#solform {
+    width: 50%;
+    float: right;
+    padding-left: 5px;
+}
+
+.formkontrol {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+    background-color: blueviolet;
+    font-size: 18px;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+
+#adres {
+    width: 450px;
+    float: right;
+    padding: 30px;
+    height: 500px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #003f82;
+    color: white;
+    padding: 10px 0;
+}
+
+#footer-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+#up {
+    background-color: #73b9ff;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    display: block;
+    margin-top: 160px;
+    font-size: 40px;
+    border: 7px solid rgb(255, 0, 0);
+    border-radius: 30%;
+}
